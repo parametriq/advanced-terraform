@@ -8,27 +8,27 @@ provider "aws" {
   skip_requesting_account_id  = true
 
   endpoints {
-    apigateway     = "http://localhost:4566"
-    cloudformation = "http://localhost:4566"
-    cloudwatch     = "http://localhost:4566"
-    dynamodb       = "http://localhost:4566"
-    ec2            = "http://localhost:4566"
-    es             = "http://localhost:4566"
-    elasticache    = "http://localhost:4566"
-    firehose       = "http://localhost:4566"
-    iam            = "http://localhost:4566"
-    kinesis        = "http://localhost:4566"
-    lambda         = "http://localhost:4566"
-    rds            = "http://localhost:4566"
-    redshift       = "http://localhost:4566"
-    route53        = "http://localhost:4566"
-    s3             = "http://localhost:4566"
-    secretsmanager = "http://localhost:4566"
-    ses            = "http://localhost:4566"
-    sns            = "http://localhost:4566"
-    sqs            = "http://localhost:4566"
-    ssm            = "http://localhost:4566"
-    stepfunctions  = "http://localhost:4566"
-    sts            = "http://localhost:4566"
+    apigateway     = var.endpoint
+    cloudformation = var.endpoint
+    cloudwatch     = var.endpoint
+    dynamodb       = var.endpoint
+    ec2            = var.endpoint
+    es             = var.endpoint
+    elasticache    = var.endpoint
+    firehose       = var.endpoint
+    iam            = var.endpoint
+    kinesis        = var.endpoint
+    lambda         = var.endpoint
+    rds            = var.endpoint
+    redshift       = var.endpoint
+    route53        = var.endpoint
+    s3             = var.endpoint
+    secretsmanager = var.endpoint
+    ses            = var.endpoint
+    sns            = var.endpoint
+    sqs            = var.endpoint
+    ssm            = var.endpoint
+    stepfunctions  = var.endpoint
+    sts            = var.endpoint
   }
 }
