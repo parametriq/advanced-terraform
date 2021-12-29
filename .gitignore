@@ -9,3 +9,4 @@
 .terraform
 .DS_Store
 commands.txt
+LOCAL_CHANGES.md
