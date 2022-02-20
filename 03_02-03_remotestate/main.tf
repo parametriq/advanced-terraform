@@ -17,6 +17,10 @@ variable "region" {
   default = "us-east-2"
 }
 
+variable "endpoint" {
+  default = "http://localhost:4566"
+}
+
 variable "vpc_cidr" {
   default = "172.16.0.0/16"
 }
@@ -24,16 +28,6 @@ variable "vpc_cidr" {
 variable "subnet1_cidr" {
   default = "172.16.0.0/24"
 }
-
-# //////////////////////////////
-# PROVIDERS
-# //////////////////////////////
-provider "aws" {
-  access_key = var.aws_access_key
-  secret_key = var.aws_secret_key
-  region     = var.region
-}
-
 
 # //////////////////////////////
 # MODULES
